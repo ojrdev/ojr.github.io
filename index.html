@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Bootstrap v4.5.0 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+      <div class="col col-md-6 offset-md-3">
+
+    <header class="header">
+
+    <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+
+    <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+
+    <form class="col-12" id="survey-form">
+
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name"  >
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" >
+      </div>
+
+
+      <div class="form-group">
+        <label id="number-label" for="number">Age (optional)</label>
+        <input type="number" class="form-control" id="number" required min="10" max="100" placeholder="Enter your age" />
+      </div>
+
+      <div class="form-group">
+          <label for="dropdown">Which option best describes your current role?</label>
+          <select class="form-control" id="dropdown">
+            <option>select Current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to Say</option>
+            <option>Others</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="recommend"  value="definitely" checked>
+          <label class="form-check-label" >
+            Definitely
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="recommend"  value="maybe">
+          <label class="form-check-label" >
+            Maybe
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="recommend" value="notsure">
+          <label class="form-check-label" >
+            Not sure
+          </label>
+        </div>
+        </div>
+
+       
+<div class="form-group">
+  <p>
+    What would you like to see improved?
+    <span class="clue">(Check all that apply)</span>
+    </p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="front-end-projects" />
+          <label class="form-check-label" >
+            Front-end Projects
+          </label>
+        </div>
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="back-end-projects" />
+  <label class="form-check-label" >
+    Back-end Projects
+  </label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="data-visualization" />
+  <label class="form-check-label" >
+    Data Visualization
+  </label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="challenges">
+<label class="form-check-label" >
+Challenges
+</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="open-source-community" />
+  <label class="form-check-label">
+    Open Source Community
+  </label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="gitter-help-rooms" />
+<label class="form-check-label" >
+Gitter help rooms
+</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="videos" />
+  <label class="form-check-label" >
+    Videos
+  </label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="city-meetups" />
+<label class="form-check-label" >
+City Meetups
+</label>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="wiki" />
+  <label class="form-check-label" >
+    Wiki
+  </label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="forum" />
+<label class="form-check-label">
+Forum
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="additional-courses" >
+<label class="form-check-label">
+Additional Courses
+</label>
+</div>
+
+</div>
+
+<div class="form-group">
+    <label for="comments">Any comments or suggestions?</label>
+    <textarea class="form-control" name="comments" id="comments" rows="3" placeholder="Enter your comment here..."></textarea>
+  </div>
+
+<div>
+<button class="btn btn-primary" type="submit" id="submit">Submit form</button>
+</div>
+
+
+    </form>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
